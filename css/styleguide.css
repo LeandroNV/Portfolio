@@ -1,0 +1,268 @@
+/* ------------------------- Fonts -------------------------------------------------- */
+
+@font-face {
+	font-family: "Overused Grotesk";
+	src: url("/assets/fonts/OverusedGrotesk-VF.woff2")
+			format("woff2 supports variations"),
+		url("/assets/fonts/OverusedGrotesk-VF.woff2") format("woff2-variations");
+	font-weight: 300 900;
+}
+
+/* ------------------------- Colors -------------------------------------------------- */
+
+:root {
+	--font-sans: "Overused Grotesk", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	--font-serif: Georgia, Times, serif;
+	--font-mono: Menlo, Courier, monospace;
+
+	--white-background: #e5e5e0;
+	--orange-background: #fe330b;
+	--yellow-background: #ff9831;
+	--primary-text: #0b0500;
+	--title-section: #d1d1c7;
+	--paragraph-section: #a29e9a;
+
+	--animation-primary: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-fast: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-smooth: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-slow: all 0.9s cubic-bezier(0.7, 0, 0.3, 1);
+
+	--section-padding: clamp(5em, 21vh, 12em);
+	--container-padding: clamp(2.5em, 8vw, 8em);
+	--gap-padding: clamp(1.5em, 4vw, 2.5em);
+}
+
+@media screen and (max-width: 1200px) {
+	:root {
+		--container-padding: 6vw;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	:root {
+		--section-padding: 12vh;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	:root {
+		--container-padding: clamp(1.25em, 4vw, 2.5em);
+		--section-padding: max(2.5em, 12vh);
+	}
+}
+
+/* ------------------------- Body -------------------------------------------------- */
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+li,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--font-sans), sans-serif;
+	color: var(--primary-text);
+	line-height: 1.6;
+	font-weight: 450;
+	font-style: normal;
+	font-size: 16px;
+	font-size: clamp(16px, 1.2vw, 19px);
+}
+
+html,
+body {
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Selection */
+::selection {
+	background-color: var(--orange-background);
+	color: var(--white-background);
+	text-shadow: none;
+}
+::-moz-selection {
+	background-color: var(--orange-background);
+	color: var(--white-background);
+	text-shadow: none;
+}
+
+canvas,
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+svg {
+	max-width: none;
+	height: auto;
+	box-sizing: border-box;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/* ------------------------- Typography -------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+span,
+strong,
+em {
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-weight: 450;
+	letter-spacing: normal;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p:last-child,
+p.big:last-child,
+p.small:last-child,
+a:last-child,
+strong:last-child {
+	margin-bottom: 0;
+}
+
+h1 {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	/* font-size: clamp(3.25em, 7vw, 8em); */
+	line-height: 1.065;
+	margin-bottom: 1em;
+	font-size: clamp(3rem, -0.057rem + 10.0714vw, 10.25rem);
+}
+
+h2 {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	font-size: calc(clamp(3.25em, 4vw, 4.5em) * 1.75);
+	line-height: 1.065;
+	margin-bottom: 0.66em;
+}
+
+h3 {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	font-size: clamp(2.66em, 4.65vw, 5.32em);
+	line-height: 1.065;
+	margin-bottom: 1em;
+}
+
+h4 {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	font-size: clamp(1.55em, 2.3vw, 2.5em);
+	line-height: 1.45;
+	margin-bottom: 1em;
+}
+
+h5 {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	font-size: 0.6em;
+	line-height: 1.065;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.5;
+}
+
+p {
+	font-family: var(--font-sans), sans-serif;
+	font-weight: 450;
+	font-style: normal;
+	color: var(--text);
+	font-size: 1.3em;
+	line-height: 1.66;
+	margin-bottom: 1em;
+}
+
+p.small {
+	font-size: 0.8em;
+	line-height: 1.75;
+	letter-spacing: 0.015em;
+}
+
+p.big {
+	font-size: 1.2em;
+}
+
+strong {
+	font-weight: 800;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-text);
+}
+
+p a {
+	text-decoration: underline;
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark p {
+	color: var(--color-white);
+}
+
+/* Lenis */
+html.lenis {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}

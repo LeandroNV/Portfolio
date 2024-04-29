@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Desarrollador Frontend y diseñador Web comprometido con la creatividad, la innovación visual y la experiencia del usuario, impulsando visiones e ideas hacia la realidad."
+		/>
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="stylesheet" href="/css/styleguide.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="icon" href="/assets/img/Icon.ico" type="image/x-icon" />
+		<title>Leandro Vargas — Frontend Developer</title>
+	</head>
+	<body>
+		<div class="cursor"></div>
+		<a class="nav-button" id="navButton">
+			<div class="hamburger" id="hamburger">
+				<svg viewBox="0 0 32 32">
+					<path
+						class="line line-top-bottom"
+						d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+					></path>
+					<path class="line" d="M7 16 27 16"></path>
+				</svg>
+			</div>
+		</a>
+		<div class="mobile">
+			<nav class="mobile_nav">
+				<ul class="mobile_list">
+					<li class="mobile_link">
+						<a
+							href="/index.html"
+							class="link-magnetic mobile_link-change"
+							><span class="link-text mobile_link-text"
+								>Home</span
+							></a
+						>
+					</li>
+					<li class="mobile_link">
+						<a
+							class="link-magnetic mobile_link-change"
+							onclick="lenis.scrollTo('#services')"
+							><span
+								class="link-text mobile_link-text"
+								id="mobileLink"
+								>Servicios</span
+							></a
+						>
+					</li>
+					<li class="mobile_link">
+						<a
+							class="link-magnetic mobile_link-change"
+							onclick="lenis.scrollTo('#work')"
+							><span class="link-text mobile_link-text"
+								>Proyectos</span
+							></a
+						>
+					</li>
+					<li class="mobile_link" onclick="lenis.scrollTo('#about')">
+						<a class="link-magnetic mobile_link-change"
+							><span class="link-text mobile_link-text"
+								>Sobre Mí</span
+							></a
+						>
+					</li>
+					<li class="mobile_link" onclick="lenis.scrollTo('#skills')">
+						<a href="#" class="link-magnetic mobile_link-change"
+							><span class="link-text mobile_link-text"
+								>Skills</span
+							></a
+						>
+					</li>
+					<li class="mobile_link">
+						<a
+							onclick="lenis.scrollTo('bottom')"
+							class="link-magnetic mobile_link-change"
+							><span class="link-text mobile_link-text"
+								>Contacto</span
+							></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile_bounces">
+				<div class="mobile_bounce_one"></div>
+				<div class="mobile_bounce_two"></div>
+			</div>
+		</div>
+		<div class="mobile_overlay" id="navOverlay"></div>
+		<div class="preloader" id="preloader">
+			<div class="preloader_text">
+				<h1 id="preloader-text-01">VISIÓN</h1>
+				<h1 id="preloader-text-02">DISEÑO</h1>
+				<h1 id="preloader-text-03">CREAR</h1>
+			</div>
+		</div>
+		<!-- Header -->
+		<header class="header" id="header">
+			<div class="header_nav" id="headerNav">
+				<figure class="header_logo">
+					<a
+						class="header_logo-link link-magnetic"
+						href="/index.html"
+					>
+						<img
+							class="link-text"
+							src="/assets/img/Logo.png"
+							alt="Logo"
+						/>
+					</a>
+				</figure>
+				<nav class="nav">
+					<ul class="nav_list">
+						<li class="nav_item">
+							<a
+								href="#services"
+								class="link-magnetic"
+								onclick="lenis.scrollTo('#services')"
+							>
+								<span class="link-text">Servicios</span>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a
+								class="link-magnetic"
+								onclick="lenis.scrollTo('#work')"
+								><span class="link-text">Proyectos</span></a
+							>
+						</li>
+						<li class="nav_item">
+							<a
+								class="link-magnetic"
+								onclick="lenis.scrollTo('#about')"
+								><span class="link-text">Sobre Mí</span></a
+							>
+						</li>
+						<li class="nav_item">
+							<a
+								class="link-magnetic"
+								onclick="lenis.scrollTo('#skills')"
+								><span class="link-text">Skills</span></a
+							>
+						</li>
+						<li class="nav_item">
+							<a
+								class="link-magnetic"
+								onclick="lenis.scrollTo('bottom')"
+								><span class="link-text">Contacto</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="hero" id="hero">
+				<div class="hero_container">
+					<div class="hero_title">
+						<h1>
+							<span class="hero_title-left">HOLA, SOY</span>
+							<span class="hero_title-right"
+								>LEANDRO VARGAS.</span
+							>
+						</h1>
+					</div>
+					<div class="hero_description">
+						<p>
+							Desarrollador Frontend y diseñador Web comprometido
+							con la creatividad, la innovación visual y la
+							experiencia del usuario, impulsando visiones e ideas
+							hacia la realidad.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="bounces">
+				<div class="bounce_one"></div>
+				<div class="bounce_two"></div>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<div class="sections">
+				<!-- Services -->
+				<section class="services" id="services">
+					<div class="services_header">
+						<h2 class="services_title">QUÉ HAGO.</h2>
+						<p class="services_description">
+							Mi obsesión es crear una experiencia digital única
+							que no solo cumpla un propósito significativo, sino
+							que también ofrezca un rendimiento excepcional,
+							siempre a la vanguardia de las tendencias y
+							tecnologías actuales en el desarrollo web.
+						</p>
+					</div>
+					<div class="services_content">
+						<article class="services_section services_section-01">
+							<div class="services_content-title">
+								<img
+									src="/assets/img/star.svg"
+									alt="Star figure"
+								/>
+								<h3>Desarrollo Web</h3>
+							</div>
+							<div class="services_content-description">
+								<p class="service_description">
+									Creo sitios web únicos y personalizados que
+									se adaptan a cualquier visión. Me enfoco en
+									la escalabilidad, el rendimiento, la
+									accesibilidad y las animaciones atractivas
+									para una experiencia memorable.
+								</p>
+								<div class="services_skills">
+									<span>Integración de CMS</span>
+									<span>Movimiento y Animaciones</span>
+									<span>Desarrollo 3D</span>
+								</div>
+								<span class="services_content-number">01.</span>
+							</div>
+						</article>
+
+						<article class="services_section services_section-02">
+							<div class="services_content-title">
+								<img
+									src="/assets/img/star.svg"
+									alt="Star figure"
+								/>
+								<h3>Diseño Web</h3>
+							</div>
+							<div class="services_content-description">
+								<p class="service_description">
+									Diseño sitios web centrados en el usuario
+									que realzan cualquier idea y la proyectan
+									para alcanzan los objetivos comerciales. La
+									tipografía limpia y los diseños minimalistas
+									captan toda mi atención para crear una
+									presencia online atractiva.
+								</p>
+								<div class="services_skills">
+									<span>Responsive Design</span>
+									<span>Wireframing</span>
+									<span>UX Writing</span>
+								</div>
+								<span class="services_content-number">02.</span>
+							</div>
+						</article>
+
+						<article class="services_section services_section-03">
+							<div class="services_content-title">
+								<img
+									src="/assets/img/star.svg"
+									alt="Star figure"
+								/>
+								<h3>SEO</h3>
+							</div>
+							<div class="services_content-description">
+								<p class="service_description">
+									Además de diseñar sitios web que destaquen
+									visualmente, también mejoro la presencia en
+									línea para elevar la visibilidad en los
+									resultados de búsqueda, asegurando que el
+									mensaje y el contenido no pasen
+									desapercibidos en el mundo digital.
+								</p>
+								<div class="services_skills">
+									<span>Technical SEO</span>
+									<span>On-Page Optimization</span>
+									<span>SEO Audits & Analysis</span>
+								</div>
+								<span class="services_content-number">03.</span>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Work -->
+				<section class="work" id="work">
+					<div class="work_header">
+						<h2 class="work_title">PROYECTOS.</h2>
+					</div>
+					<div class="work_content">
+						<a
+							href="#work"
+							class="work_section work_section-01"
+							onclick="alert()"
+						>
+							<div class="work_content-image">
+								<img
+									src="/assets/img/work1.webp"
+									alt="Work 01"
+								/>
+							</div>
+							<div class="work_content-description">
+								<h4>Lengupense</h4>
+								<div class="work_content-categories">
+									<span>Design</span>
+									<span>Development</span>
+									<span>2024</span>
+								</div>
+							</div>
+						</a>
+
+						<a
+							href="https://challengealuralatam.netlify.app/"
+							class="work_section work_section-02"
+							target="_blank"
+						>
+							<div class="work_content-image">
+								<img
+									src="/assets/img/work2.webp"
+									alt="Work 02"
+								/>
+							</div>
+							<div class="work_content-description">
+								<h4>Encryptor</h4>
+								<div class="work_content-categories">
+									<span>Design</span>
+									<span>Development</span>
+									<span>2024</span>
+								</div>
+							</div>
+						</a>
+
+						<a
+							href="https://francachela-demo.netlify.app/"
+							class="work_section work_section-03"
+							target="_blank"
+						>
+							<div class="work_content-image">
+								<img
+									src="/assets/img/work3.webp"
+									alt="Work 03"
+								/>
+							</div>
+							<div class="work_content-description">
+								<h4>Francachela</h4>
+								<div class="work_content-categories">
+									<span>Design</span>
+									<span>Development</span>
+									<span>2024</span>
+								</div>
+							</div>
+						</a>
+
+						<a
+							href="https://tourist-landing-leonicvar.netlify.app/"
+							target="_blank"
+							class="work_section work_section-04"
+						>
+							<div class="work_content-image">
+								<img
+									src="/assets/img/work4.webp"
+									alt="Work 04"
+								/>
+							</div>
+							<div class="work_content-description">
+								<h4>Tourist Landing</h4>
+								<div class="work_content-categories">
+									<span>Design</span>
+									<span>Development</span>
+									<span>2024</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+
+				<!-- About Me -->
+
+				<section class="about" id="about">
+					<div class="about_header">
+						<h2 class="about_title">UN POCO SOBRE MÍ.</h2>
+					</div>
+					<div class="about_content">
+						<div class="about_section about_section-01">
+							<div class="about_content-image">
+								<img
+									src="/assets/img/About1.png"
+									alt="About Me"
+								/>
+							</div>
+							<div class="about_content-description">
+								<p>
+									<span>llllllllllll</span>
+									Soy estudiante de Ingeniería de Software y
+									Frontend Developer. Enfocado en el
+									desarrollo creativo y en el diseño de
+									interfaces únicas. Con un ojo puesto en la
+									vanguardia tecnológica, me esfuerzo por
+									fusionar la funcionalidad con la estética,
+									buscando siempre la innovación en cada
+									proyecto que emprendo.
+								</p>
+							</div>
+						</div>
+						<div class="bounces">
+							<div class="bounce_one"></div>
+							<div class="bounce_two"></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Skills -->
+
+				<section class="skills" id="skills">
+					<div class="skills_header">
+						<h2 class="skills_title">SKILLS.</h2>
+						<p>
+							DESDE EL DISEÑO HASTA EL DESARROLLO, APORTO UNA
+							PERSPECTIVA ÚNICA A CADA PROYECTO EN EL QUE TRABAJO.
+							AQUÍ ESTÁN ALGUNAS DE LAS HERRAMIENTAS Y TECNOLOGÍAS
+							QUE UTILIZO PARA DAR VIDA A CUALQUIER VISIÓN.
+						</p>
+					</div>
+					<div class="skills_content">
+						<div class="skills_item" id="skills-item1">
+							<h4>Javascript</h4>
+						</div>
+						<div class="skills_item" id="skills-item2">
+							<h4>Sass</h4>
+						</div>
+						<div class="skills_item" id="skills-item3">
+							<h4>GreenShook</h4>
+						</div>
+						<div class="skills_item" id="skills-item4">
+							<h4>React Js</h4>
+							<span>(Learning)</span>
+						</div>
+						<div class="skills_item" id="skills-item5">
+							<h4>Next Js</h4>
+							<span>(Learning)</span>
+						</div>
+						<div class="skills_item" id="skills-item6">
+							<h4>Astro</h4>
+						</div>
+
+						<div class="skills_item" id="skills-item7">
+							<h4>Three Js</h4>
+							<span>(Learning)</span>
+						</div>
+
+						<div class="skills_item" id="skills-item8">
+							<h4>GSAP</h4>
+						</div>
+
+						<div class="skills_item" id="skills-item9">
+							<h4>UI/UX Design</h4>
+							<span>(Learning)</span>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="footer_links">
+				<div class="footer_nav">
+					<span>NAVIGATION</span>
+					<div class="footer_nav-links">
+						<a href="/index.html">Home</a>
+						<a onclick="lenis.scrollTo('#services')">Servicios</a>
+						<a onclick="lenis.scrollTo('#work')">Proyectos</a>
+						<a onclick="lenis.scrollTo('#about')">Sobre Mí</a>
+						<a onclick="lenis.scrollTo('#skills')">Skills</a>
+						<a onclick="lenis.scrollTo('bottom')">Contacto</a>
+					</div>
+				</div>
+				<div class="footer_social">
+					<span>SOCIALS</span>
+					<div class="footer_social-links">
+						<a
+							href="https://www.linkedin.com/in/leonicvar/"
+							target="_blank"
+							>Linkedin</a
+						>
+						<a href="https://github.com/LeandroNV" target="_blank"
+							>GitHub</a
+						>
+						<a
+							href="https://www.instagram.com/leonicvar/"
+							target="_blank"
+							>Instagram</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer_logo">
+				<a href="#"
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="1080"
+						zoomAndPan="magnify"
+						viewBox="0 0 810 135.000003"
+						height="180"
+						preserveAspectRatio="xMidYMid meet"
+						version="1.0"
+					>
+						<defs>
+							<g />
+							<clipPath id="57d0df80c3">
+								<path
+									d="M 681.875 5.027344 L 804.941406 5.027344 L 804.941406 128 L 681.875 128 Z M 681.875 5.027344 "
+									clip-rule="nonzero"
+								/>
+							</clipPath>
+							<clipPath id="a2ca39177b">
+								<path
+									d="M 97.691406 5.027344 L 220.761719 5.027344 L 220.761719 128 L 97.691406 128 Z M 97.691406 5.027344 "
+									clip-rule="nonzero"
+								/>
+							</clipPath>
+						</defs>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(1.434433, 120.138636)">
+								<g>
+									<path
+										d="M 65.921875 -22.453125 C 69.703125 -22.453125 73.375 -23.023438 76.9375 -24.171875 C 80.507812 -25.316406 83.128906 -26.414062 84.796875 -27.46875 L 87.3125 -29.1875 L 97.875 -8.0625 C 97.53125 -7.789062 97.046875 -7.4375 96.421875 -7 C 95.804688 -6.5625 94.375 -5.75 92.125 -4.5625 C 89.882812 -3.375 87.488281 -2.335938 84.9375 -1.453125 C 82.382812 -0.566406 79.035156 0.222656 74.890625 0.921875 C 70.753906 1.628906 66.484375 1.984375 62.078125 1.984375 C 51.953125 1.984375 42.351562 -0.5 33.28125 -5.46875 C 24.21875 -10.445312 16.910156 -17.296875 11.359375 -26.015625 C 5.804688 -34.734375 3.03125 -44.160156 3.03125 -54.296875 C 3.03125 -61.953125 4.660156 -69.300781 7.921875 -76.34375 C 11.179688 -83.394531 15.519531 -89.425781 20.9375 -94.4375 C 26.351562 -99.457031 32.671875 -103.460938 39.890625 -106.453125 C 47.109375 -109.453125 54.503906 -110.953125 62.078125 -110.953125 C 69.128906 -110.953125 75.625 -110.113281 81.5625 -108.4375 C 87.507812 -106.769531 91.71875 -105.097656 94.1875 -103.421875 L 97.875 -100.921875 L 87.3125 -79.78125 C 86.695312 -80.3125 85.769531 -80.953125 84.53125 -81.703125 C 83.300781 -82.453125 80.835938 -83.441406 77.140625 -84.671875 C 73.441406 -85.898438 69.703125 -86.515625 65.921875 -86.515625 C 59.929688 -86.515625 54.554688 -85.546875 49.796875 -83.609375 C 45.046875 -81.671875 41.28125 -79.117188 38.5 -75.953125 C 35.726562 -72.785156 33.613281 -69.375 32.15625 -65.71875 C 30.707031 -62.0625 29.984375 -58.335938 29.984375 -54.546875 C 29.984375 -46.273438 33.085938 -38.859375 39.296875 -32.296875 C 45.503906 -25.734375 54.378906 -22.453125 65.921875 -22.453125 Z M 65.921875 -22.453125 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(216.734006, 120.138636)">
+								<g>
+									<path
+										d="M 32.765625 -67.625 L 32.765625 0 L 7.921875 0 L 7.921875 -108.984375 L 32.765625 -108.984375 L 76.09375 -41.34375 L 76.34375 -41.34375 L 76.34375 -108.984375 L 101.1875 -108.984375 L 101.1875 0 L 76.34375 0 L 33.015625 -67.625 Z M 32.765625 -67.625 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(325.836747, 120.138636)">
+								<g>
+									<path
+										d="M 1.0625 -87.1875 L 1.0625 -108.984375 L 77.671875 -108.984375 L 77.671875 -87.1875 L 51.78125 -87.1875 L 51.78125 0 L 26.953125 0 L 26.953125 -87.1875 Z M 1.0625 -87.1875 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(404.559801, 120.138636)">
+								<g>
+									<path
+										d="M 63.265625 -108.984375 L 107.265625 0 L 80.578125 0 L 72.515625 -21.796875 L 31.046875 -21.796875 L 22.984375 0 L -3.703125 0 L 40.28125 -108.984375 Z M 64.0625 -43.59375 L 51.90625 -75.296875 L 51.65625 -75.296875 L 39.5 -43.59375 Z M 64.0625 -43.59375 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(508.114913, 120.138636)">
+								<g>
+									<path
+										d="M 65.921875 -22.453125 C 69.703125 -22.453125 73.375 -23.023438 76.9375 -24.171875 C 80.507812 -25.316406 83.128906 -26.414062 84.796875 -27.46875 L 87.3125 -29.1875 L 97.875 -8.0625 C 97.53125 -7.789062 97.046875 -7.4375 96.421875 -7 C 95.804688 -6.5625 94.375 -5.75 92.125 -4.5625 C 89.882812 -3.375 87.488281 -2.335938 84.9375 -1.453125 C 82.382812 -0.566406 79.035156 0.222656 74.890625 0.921875 C 70.753906 1.628906 66.484375 1.984375 62.078125 1.984375 C 51.953125 1.984375 42.351562 -0.5 33.28125 -5.46875 C 24.21875 -10.445312 16.910156 -17.296875 11.359375 -26.015625 C 5.804688 -34.734375 3.03125 -44.160156 3.03125 -54.296875 C 3.03125 -61.953125 4.660156 -69.300781 7.921875 -76.34375 C 11.179688 -83.394531 15.519531 -89.425781 20.9375 -94.4375 C 26.351562 -99.457031 32.671875 -103.460938 39.890625 -106.453125 C 47.109375 -109.453125 54.503906 -110.953125 62.078125 -110.953125 C 69.128906 -110.953125 75.625 -110.113281 81.5625 -108.4375 C 87.507812 -106.769531 91.71875 -105.097656 94.1875 -103.421875 L 97.875 -100.921875 L 87.3125 -79.78125 C 86.695312 -80.3125 85.769531 -80.953125 84.53125 -81.703125 C 83.300781 -82.453125 80.835938 -83.441406 77.140625 -84.671875 C 73.441406 -85.898438 69.703125 -86.515625 65.921875 -86.515625 C 59.929688 -86.515625 54.554688 -85.546875 49.796875 -83.609375 C 45.046875 -81.671875 41.28125 -79.117188 38.5 -75.953125 C 35.726562 -72.785156 33.613281 -69.375 32.15625 -65.71875 C 30.707031 -62.0625 29.984375 -58.335938 29.984375 -54.546875 C 29.984375 -46.273438 33.085938 -38.859375 39.296875 -32.296875 C 45.503906 -25.734375 54.378906 -22.453125 65.921875 -22.453125 Z M 65.921875 -22.453125 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g fill="#d1d1c7" fill-opacity="1">
+							<g transform="translate(607.575417, 120.138636)">
+								<g>
+									<path
+										d="M 1.0625 -87.1875 L 1.0625 -108.984375 L 77.671875 -108.984375 L 77.671875 -87.1875 L 51.78125 -87.1875 L 51.78125 0 L 26.953125 0 L 26.953125 -87.1875 Z M 1.0625 -87.1875 "
+									/>
+								</g>
+							</g>
+						</g>
+						<g clip-path="url(#57d0df80c3)">
+							<path
+								fill="#de2703"
+								d="M 804.660156 66.421875 C 804.660156 68.429688 804.5625 70.4375 804.367188 72.4375 C 804.167969 74.4375 803.875 76.425781 803.480469 78.398438 C 803.089844 80.371094 802.601562 82.316406 802.019531 84.242188 C 801.433594 86.167969 800.757812 88.058594 799.988281 89.914062 C 799.21875 91.773438 798.359375 93.585938 797.410156 95.359375 C 796.464844 97.132812 795.429688 98.855469 794.316406 100.527344 C 793.199219 102.199219 792 103.8125 790.726562 105.367188 C 789.449219 106.921875 788.101562 108.410156 786.679688 109.832031 C 785.257812 111.253906 783.769531 112.601562 782.214844 113.878906 C 780.660156 115.152344 779.046875 116.351562 777.375 117.46875 C 775.703125 118.585938 773.980469 119.617188 772.207031 120.566406 C 770.433594 121.511719 768.621094 122.371094 766.761719 123.140625 C 764.902344 123.910156 763.011719 124.585938 761.089844 125.171875 C 759.164062 125.753906 757.21875 126.242188 755.246094 126.632812 C 753.273438 127.027344 751.285156 127.320312 749.285156 127.519531 C 747.285156 127.714844 745.277344 127.8125 743.265625 127.8125 C 741.257812 127.8125 739.25 127.714844 737.25 127.519531 C 735.25 127.320312 733.261719 127.027344 731.289062 126.632812 C 729.316406 126.242188 727.371094 125.753906 725.445312 125.171875 C 723.523438 124.585938 721.628906 123.910156 719.773438 123.140625 C 717.914062 122.371094 716.101562 121.511719 714.328125 120.566406 C 712.554688 119.617188 710.832031 118.585938 709.160156 117.46875 C 707.488281 116.351562 705.875 115.152344 704.320312 113.878906 C 702.765625 112.601562 701.277344 111.253906 699.855469 109.832031 C 698.433594 108.410156 697.085938 106.921875 695.808594 105.367188 C 694.535156 103.8125 693.335938 102.199219 692.21875 100.527344 C 691.101562 98.855469 690.070312 97.132812 689.125 95.359375 C 688.175781 93.585938 687.316406 91.773438 686.546875 89.914062 C 685.777344 88.058594 685.101562 86.167969 684.515625 84.242188 C 683.933594 82.316406 683.445312 80.371094 683.054688 78.398438 C 682.660156 76.425781 682.367188 74.4375 682.167969 72.4375 C 681.972656 70.4375 681.875 68.429688 681.875 66.421875 C 681.875 64.410156 681.972656 62.402344 682.167969 60.402344 C 682.367188 58.402344 682.660156 56.414062 683.054688 54.441406 C 683.445312 52.472656 683.933594 50.523438 684.515625 48.597656 C 685.101562 46.675781 685.777344 44.785156 686.546875 42.925781 C 687.316406 41.066406 688.175781 39.253906 689.125 37.480469 C 690.070312 35.707031 691.101562 33.984375 692.21875 32.3125 C 693.335938 30.640625 694.535156 29.027344 695.808594 27.472656 C 697.085938 25.917969 698.433594 24.429688 699.855469 23.007812 C 701.277344 21.585938 702.765625 20.238281 704.320312 18.960938 C 705.875 17.6875 707.488281 16.492188 709.160156 15.375 C 710.832031 14.257812 712.554688 13.222656 714.328125 12.277344 C 716.101562 11.328125 717.914062 10.46875 719.773438 9.699219 C 721.628906 8.929688 723.523438 8.253906 725.445312 7.671875 C 727.371094 7.085938 729.316406 6.597656 731.289062 6.207031 C 733.261719 5.8125 735.25 5.519531 737.25 5.320312 C 739.25 5.125 741.257812 5.027344 743.265625 5.027344 C 745.277344 5.027344 747.285156 5.125 749.285156 5.320312 C 751.285156 5.519531 753.273438 5.8125 755.246094 6.207031 C 757.21875 6.597656 759.164062 7.085938 761.089844 7.671875 C 763.011719 8.253906 764.902344 8.929688 766.761719 9.699219 C 768.621094 10.46875 770.433594 11.328125 772.207031 12.277344 C 773.980469 13.222656 775.703125 14.257812 777.375 15.375 C 779.046875 16.492188 780.660156 17.6875 782.214844 18.960938 C 783.769531 20.238281 785.257812 21.585938 786.679688 23.007812 C 788.101562 24.429688 789.449219 25.917969 790.726562 27.472656 C 792 29.027344 793.199219 30.640625 794.316406 32.3125 C 795.429688 33.984375 796.464844 35.707031 797.410156 37.480469 C 798.359375 39.253906 799.21875 41.066406 799.988281 42.925781 C 800.757812 44.785156 801.433594 46.675781 802.019531 48.597656 C 802.601562 50.523438 803.089844 52.472656 803.480469 54.441406 C 803.875 56.414062 804.167969 58.402344 804.367188 60.402344 C 804.5625 62.402344 804.660156 64.410156 804.660156 66.421875 Z M 804.660156 66.421875 "
+								fill-opacity="1"
+								fill-rule="nonzero"
+							/>
+						</g>
+						<g clip-path="url(#a2ca39177b)">
+							<path
+								fill="#de2703"
+								d="M 220.480469 66.421875 C 220.480469 68.429688 220.382812 70.4375 220.183594 72.4375 C 219.988281 74.4375 219.691406 76.425781 219.300781 78.398438 C 218.910156 80.371094 218.421875 82.316406 217.835938 84.242188 C 217.253906 86.167969 216.578125 88.058594 215.808594 89.914062 C 215.039062 91.773438 214.179688 93.585938 213.230469 95.359375 C 212.28125 97.132812 211.25 98.855469 210.132812 100.527344 C 209.015625 102.199219 207.820312 103.8125 206.542969 105.367188 C 205.269531 106.921875 203.921875 108.410156 202.5 109.832031 C 201.078125 111.253906 199.589844 112.601562 198.035156 113.878906 C 196.480469 115.152344 194.867188 116.351562 193.195312 117.46875 C 191.523438 118.585938 189.800781 119.617188 188.027344 120.566406 C 186.253906 121.511719 184.4375 122.371094 182.582031 123.140625 C 180.722656 123.910156 178.832031 124.585938 176.90625 125.171875 C 174.984375 125.753906 173.035156 126.242188 171.0625 126.632812 C 169.089844 127.027344 167.105469 127.320312 165.105469 127.519531 C 163.101562 127.714844 161.097656 127.8125 159.085938 127.8125 C 157.074219 127.8125 155.070312 127.714844 153.070312 127.519531 C 151.066406 127.320312 149.082031 127.027344 147.109375 126.632812 C 145.136719 126.242188 143.1875 125.753906 141.265625 125.171875 C 139.339844 124.585938 137.449219 123.910156 135.59375 123.140625 C 133.734375 122.371094 131.917969 121.511719 130.144531 120.566406 C 128.371094 119.617188 126.648438 118.585938 124.976562 117.46875 C 123.304688 116.351562 121.691406 115.152344 120.140625 113.878906 C 118.585938 112.601562 117.097656 111.253906 115.675781 109.832031 C 114.253906 108.410156 112.902344 106.921875 111.628906 105.367188 C 110.351562 103.8125 109.15625 102.199219 108.039062 100.527344 C 106.921875 98.855469 105.890625 97.132812 104.941406 95.359375 C 103.996094 93.585938 103.136719 91.773438 102.367188 89.914062 C 101.597656 88.058594 100.921875 86.167969 100.335938 84.242188 C 99.753906 82.316406 99.265625 80.371094 98.871094 78.398438 C 98.480469 76.425781 98.183594 74.4375 97.988281 72.4375 C 97.792969 70.4375 97.691406 68.429688 97.691406 66.421875 C 97.691406 64.410156 97.792969 62.402344 97.988281 60.402344 C 98.183594 58.402344 98.480469 56.414062 98.871094 54.441406 C 99.265625 52.472656 99.753906 50.523438 100.335938 48.597656 C 100.921875 46.675781 101.597656 44.785156 102.367188 42.925781 C 103.136719 41.066406 103.996094 39.253906 104.941406 37.480469 C 105.890625 35.707031 106.921875 33.984375 108.039062 32.3125 C 109.15625 30.640625 110.351562 29.027344 111.628906 27.472656 C 112.902344 25.917969 114.253906 24.429688 115.675781 23.007812 C 117.097656 21.585938 118.585938 20.238281 120.140625 18.960938 C 121.691406 17.6875 123.304688 16.492188 124.976562 15.375 C 126.648438 14.257812 128.371094 13.222656 130.144531 12.277344 C 131.917969 11.328125 133.734375 10.46875 135.59375 9.699219 C 137.449219 8.929688 139.339844 8.253906 141.265625 7.671875 C 143.1875 7.085938 145.136719 6.597656 147.109375 6.207031 C 149.082031 5.8125 151.066406 5.519531 153.070312 5.320312 C 155.070312 5.125 157.074219 5.027344 159.085938 5.027344 C 161.097656 5.027344 163.101562 5.125 165.105469 5.320312 C 167.105469 5.519531 169.089844 5.8125 171.0625 6.207031 C 173.035156 6.597656 174.984375 7.085938 176.90625 7.671875 C 178.832031 8.253906 180.722656 8.929688 182.582031 9.699219 C 184.4375 10.46875 186.253906 11.328125 188.027344 12.277344 C 189.800781 13.222656 191.523438 14.257812 193.195312 15.375 C 194.867188 16.492188 196.480469 17.6875 198.035156 18.960938 C 199.589844 20.238281 201.078125 21.585938 202.5 23.007812 C 203.921875 24.429688 205.269531 25.917969 206.542969 27.472656 C 207.820312 29.027344 209.015625 30.640625 210.132812 32.3125 C 211.25 33.984375 212.28125 35.707031 213.230469 37.480469 C 214.179688 39.253906 215.039062 41.066406 215.808594 42.925781 C 216.578125 44.785156 217.253906 46.675781 217.835938 48.597656 C 218.421875 50.523438 218.910156 52.472656 219.300781 54.441406 C 219.691406 56.414062 219.988281 58.402344 220.183594 60.402344 C 220.382812 62.402344 220.480469 64.410156 220.480469 66.421875 Z M 220.480469 66.421875 "
+								fill-opacity="1"
+								fill-rule="nonzero"
+							/>
+						</g></svg
+				></a>
+			</div>
+
+			<div class="footer_bottom">
+				<span
+					>© 2024 <br />
+					LEANDRO VARGAS</span
+				>
+				<button class="scroll_to_top" onclick="lenis.scrollTo('top')">
+					<span id="arrow_top-one">
+						<img src="/assets/img/arrow-top.svg" alt="Arrow Top" />
+					</span>
+
+					<span id="arrow_top-two">
+						<img src="/assets/img/arrow-top.svg" alt="Arrow Top" />
+					</span>
+				</button>
+			</div>
+		</footer>
+
+		<!-- JS -->
+		<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="/js/app.js"></script>
+	</body>
+</html>
