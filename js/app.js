@@ -284,12 +284,13 @@ tl.to("#preloader-text-01", {
 /*===================Alerta Proyecto========================= */
 function alert() {
 	Swal.fire({
-		position: "bottom-start",
+		position: "bottom",
 		icon: "warning",
-		title: "Proyecto en desarrollo...",
+		title: "Proyecto en desarrollo.",
 		showConfirmButton: false,
 		timer: 1500,
 		background: "#090908",
 		color: "#D1D1C7",
+		width: "300px",
 	});
 }
