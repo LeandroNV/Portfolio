@@ -206,6 +206,7 @@ gsap.set(".header_nav", { autoAlpha: 0 });
 gsap.set(".bounces", { autoAlpha: 0 });
 
 tl.to("#preloader-text-01", {
+	delay: 0.9,
 	duration: 0.5,
 	opacity: 0,
 	ease: "Power3.easeOut",
@@ -285,7 +286,7 @@ function alert() {
 	Swal.fire({
 		position: "bottom-start",
 		icon: "warning",
-		title: "Proyecto en construcción...",
+		title: "Proyecto en desarrollo...",
 		showConfirmButton: false,
 		timer: 1500,
 		background: "#090908",
