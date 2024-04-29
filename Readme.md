@@ -1,6 +1,6 @@
 # Leandro Vargas - Desarrollador Frontend
 
-![Leandro Vargas](assets/img/About1.pngg)
+![Leandro Vargas](assets/img/About1.png)
 Desarrollador frontend y diseñador web comprometido con la creatividad, la innovación visual y la experiencia del usuario. Este sitio web muestra mis habilidades, proyectos y un vistazo a mi trayectoria profesional.
 
 ## Características
