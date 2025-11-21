@@ -294,3 +294,8 @@ function alert() {
 		width: "300px",
 	});
 }
+
+/*===================Año Dinámico========================= */
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
